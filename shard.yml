@@ -1,0 +1,10 @@
+name: libluaradio
+version: 0.1.0
+
+authors:
+   - name <martyn.jago@btinternet.com>
+
+description: |
+   Bindings for LuaRadio (http://luaradio.io/)
+
+license: MIT
