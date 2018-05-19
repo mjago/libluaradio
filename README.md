@@ -17,6 +17,8 @@ dependencies:
 ```crystal
 require "libluaradio"
 ```
+See the examples for usage. The flow-graph is a Lua script. See [LuaRadio project docs](http://luaradio.io/) for more details.
+
 ## Examples:
 (Note: The examples decode a recorded IQ data file.
  Generally you would decode an SDR device plugged into a USB port,
