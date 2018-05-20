@@ -8,10 +8,11 @@ spawn do
 end
 
 count = 1
+puts "play for 10 seconds:"
 loop do
-  puts "running (#{count})..."
-  break if count >= 10
+  break if count > 10
   sleep 1.0
+  puts "playing (#{count})..."
   count += 1
 end
 
