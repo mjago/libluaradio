@@ -22,20 +22,26 @@ See the examples for usage. The flow-graph is a Lua script. See [LuaRadio projec
 ## Examples:
 (Note: The examples decode a recorded IQ data file.
  Generally you would decode an SDR device plugged into a USB port,
- such as an RTLSDR receiver.)
+ such as a cheap RTLSDR usb stick - see Ebay.)
 
-Download a data file called fm-capture.dat to the examples directory:
+First download an IQ recording data file called fm-capture.dat to the examples directory:
 ```sh
- wget -O examples/fm-capture.dat http://martynjago.co.uk/blog/audio/fm-capture.dat
+> wget -O examples/fm-capture.dat http://martynjago.co.uk/blog/audio/fm-capture.dat
 ```
 
-Run the following commands:
-```crystal
-crystal examples/wbfm1.cr
-crystal examples/wbfm2.cr
+Then run the examples
+```sh
+> crystal examples/wbfm1.cr
+> crystal examples/wbfm2.cr
+> crystal examples/wbfm_stereo.cr
 ```
 Excellent documentation for the LuaRadio project [can be viewed here](http://luaradio.io/)
 
+## Debug:
+To see debug info during play use the following:
+```sh
+> LUARADIO_DEBUG=1 crystal examples/wbfm_stereo.cr
+```
 ## Contributing
 
 1. Fork it ( https://github.com/mjago/libluaradio/fork )
