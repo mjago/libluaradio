@@ -34,10 +34,11 @@ module ModLuaRadio
       config = @config == "" ? @script : @config
       ret = LibLuaRadio.load(@handle, config.bytes)
       raise lr_error unless ret == 0
+      @loaded = true
     end
 
     def start
-      load @config unless @loaded
+      load unless @loaded
       ret = LibLuaRadio.start(@handle)
       raise lr_error unless ret == 0
     end
