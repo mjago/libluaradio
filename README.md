@@ -1,6 +1,17 @@
 # libluaradio
 
-Crystal Binding For [LuaRadio](https://luaradio.io)
+Crystal Bindings For [LuaRadio](https://luaradio.io)
+
+## Why
+
+I have written an [Audio Player called Sonicri](https://github.com/mjago/sonicri) in the Crystal language which plays audio files, internet radio, and podcasts. I wanted to add
+terrestrial FM and AM radio stations and discovered LuaRadio. These bindings enable me to embed suitable radio players into [Sonicri](https://github.com/mjago/sonicri).
+
+## Dependencies
+
+1) LuaRadio ([Installation instructions](http://luaradio.io/docs/installation.html))
+2) fftw3f
+3) volk or liquid
 
 ## Installation
 
